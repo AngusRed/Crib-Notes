@@ -1,3 +1,4 @@
+## Commonly used commands  
 `ls` = See files  
 `-a` = Include hidden/all  
 `cd` = Change Directory  
