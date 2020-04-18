@@ -1,4 +1,6 @@
 ## Commonly used commands  
+
+**Got all this from the [Kali Linux Revealed](https://www.kali.org/download-kali-linux-revealed-book/)**    
 `ls` = See files  
 `-a` = Include hidden/all  
 `cd` = Change Directory  
