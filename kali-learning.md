@@ -5,6 +5,7 @@
 `-a` = Include hidden/all  
 `cd` = Change Directory  
 `cp` = move, remove or copy file or directory  
+`-E` = Gives an ASCI next the Hex
 
 `-a` - all (Reveals hidden files prefixed with " . ")  
 `-R` - Recursive  
