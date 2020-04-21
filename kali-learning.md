@@ -84,3 +84,15 @@ The `-u` option can limit the messages to those emitted by a specific systemd un
 `5` =Group  
 `4` =Other  
 
+## TAR Files
+
+`-xf` = Extract File
+`#!/bin/bash
+
+for i in {1000..0}
+  do
+    tar -xf "$i.tar"
+  done`
+**The above runs a loop extraction**
+  
+
