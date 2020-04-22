@@ -94,5 +94,7 @@ for i in {1000..0}
     tar -xf "$i.tar"  
   done`  
 **The above runs a loop extraction**  
+
+`rm *(file type)` = Removes all files in a directory by file name type
   
 
