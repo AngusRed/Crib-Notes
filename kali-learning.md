@@ -122,7 +122,7 @@ Enter new PW
 Retype new PW
 Success/Failure  
 
-# DTG  
+**DTG**
 
 `$  sudo  date -s "11/20/2003 12:00:00"`
 
