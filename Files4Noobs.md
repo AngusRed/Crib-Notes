@@ -10,12 +10,14 @@ First up, TAR!
 
 <-xf` = Extract File  
 
-` #!/bin/bash  
+``` 
+#!/bin/bash  
 
 for i in {1000..0}  
   do  
     tar -xf "$i.tar"  
-  done>  
+  done
+  ```
   
 **The above runs a loop extraction**  
 
