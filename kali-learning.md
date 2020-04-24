@@ -83,7 +83,7 @@ The `-u` option can limit the messages to those emitted by a specific systemd un
 `7` =User  
 `5` =Group  
 `4` =Other  
-## Changing Username from Default "Kali" and your Default password "kali"
+## Changing Username from Default "Kali" and your Default password "kali", also Date/Time (DTG)
 
 The easiest way is to create a new user with `$ sudo adduser YourChoiceUsername`  
 
@@ -121,6 +121,10 @@ Next we need to change your password, this is USUALLY easier than the above. The
 Enter new PW
 Retype new PW
 Success/Failure  
+
+# DTG  
+
+`$  sudo  date -s "11/20/2003 12:00:00"`
 
 
 
