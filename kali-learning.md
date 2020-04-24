@@ -83,18 +83,45 @@ The `-u` option can limit the messages to those emitted by a specific systemd un
 `7` =User  
 `5` =Group  
 `4` =Other  
+## Changing Username from Default "Kali" and your Default password "kali"
 
-## TAR Files
+The easiest way is to create a new user with `$ sudo adduser YourChoiceUsername`  
 
-`-xf` = Extract File
-`#!/bin/bash  
+To change a username in an existing/running machine the cmd is 
 
-for i in {1000..0}  
-  do  
-    tar -xf "$i.tar"  
-  done`  
-**The above runs a loop extraction**  
+`$ sudo usermod -l YourChoice kaliDefault`  This usually will return something about a process running and a number. You can run another command to kill that process but then your kali will shutdown.
 
-`rm *(file type)` = Removes all files in a directory by file name type
-  
+Thanks to @rogan and @InitRoot From #HackSouth we now know how to change it.
+
+Manually reboot or in your command line run  
+`$ sudo reboot`  
+
+When the reboot starts, hit `F3`, this will take you to `initroot` so basically like the bios. In there, you will run the same command as above, and it should work.  
+
+`$ sudo usermod -l YourChoice kaliDefault`  
+Once thats done run `sudo reboot`  
+
+When you then log in use your new username. Should work! So now you are back in your kali. You need to change your root user now.  
+
+It started with `$  kali@kali`  
+Then you changed it to `$ YourChoice@kali`  
+Now we want to make it `$ YourChoice@YourChoice`  
+
+In your command line run:  
+
+To see what your details are run `$ cat /etc/hosts`  
+
+`$  nano /etc/hosts`  nano brings up a GUI. In there you use up/down/left/right arrows to go to the `hostname` that says kali. You will manually change it to whatever you want. Next we need to change the hostname. To test that you are half way run `$  pwd` It will take a few seconds.  
+
+Next run `$ nano /etc/hostname` in there, change the name in the gui. To test success you can run `$  Reboot` or open a new Terminal and run `$ pwd`, this should be almost instant cause you have resolved
+
+Next we need to change your password, this is USUALLY easier than the above. The command is:  
+
+`$  sudo passwd`  
+Enter new PW
+Retype new PW
+Success/Failure  
+
+
+
 
