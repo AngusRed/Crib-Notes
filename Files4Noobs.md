@@ -8,13 +8,15 @@ First up, TAR!
 
 ## TAR Files
 
-`-xf` = Extract File
-`#!/bin/bash  
+<-xf` = Extract File  
+
+` #!/bin/bash  
 
 for i in {1000..0}  
   do  
     tar -xf "$i.tar"  
-  done`  
+  done>  
+  
 **The above runs a loop extraction**  
 
 `rm *(file type)` = Removes all files in a directory by file name type  
