@@ -13,7 +13,20 @@
 `ps aux` - Process list  
 `PID` - Process Identifier  
 `TERM` - gracefully stops a .exe  
-`KILL` - force kill .exe  
+`KILL` - force kill .exe 
+`dirb http://ip.ip.ip.ip` - Runs a scan of common sub-directories  (dirb= Directory Buster)  
+`nc -nvlp 9001` - netcat listener port 9001  
+n=numeric-only IP addresses, no DNS  
+v=verbose [use twice to be more verbose]  
+l=listen mode, for inbound connects    
+p=local port number  
+
+[https://gtfobins.github.io/](GTFO Bins)    
+`find / -name *flag* -type f 2>/dev/null` - find"find cmd" / -name(Specify Name) *flag*(Wildcard "flag") -type(Specify Type) f(Specifies it is a file) 2>/dev/null (Output, 2 is standard error) Then cat the flag directories  
+
+
+
+
 
 `pwd` = print working directory  
 `editor` = opens editor  
